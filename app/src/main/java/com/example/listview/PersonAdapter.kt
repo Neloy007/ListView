@@ -1,6 +1,7 @@
 package com.example.listview
 
 import android.content.Context
+import android.provider.ContactsContract.Profile
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -25,7 +26,7 @@ class PersonAdapter (context: Context,private val profileList: List<Person>)
         val nameView = itemView.findViewById<TextView>(R.id.nameText)
         val ageView = itemView.findViewById<TextView>(R.id.ageText)
 
-        imageViewProfile.setImageResource(R.drawable.profile)
+        imageViewProfile.setImageResource(profile.imageResId)
         nameView.text = profile.name
         ageView.text = profile.age
         return itemView

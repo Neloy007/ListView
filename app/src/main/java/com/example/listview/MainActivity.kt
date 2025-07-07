@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
 
 
-        var binding = ActivityMainBinding.inflate(layoutInflater)
+        val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val listView = binding.myListView
@@ -27,7 +27,13 @@ class MainActivity : AppCompatActivity() {
                     Person(R.drawable.profile3,"Rafi", "19"),
                     Person(R.drawable.profile,"Neloy", "23"),
                     Person(R.drawable.profile2,"Asha", "20" ),
-                    Person(R.drawable.profile3,"Rafi", "19")
+                    Person(R.drawable.profile3,"Rafi", "19"),
+                    Person(R.drawable.profile,"Neloy", "23"),
+                    Person(R.drawable.profile2,"Asha", "20" ),
+                    Person(R.drawable.profile3,"Rafi", "19"),
+                    Person(R.drawable.profile,"Neloy", "23"),
+                    Person(R.drawable.profile2,"Asha", "20" ),
+                    Person(R.drawable.profile3,"Rafi", "19"),
                 )
 
                 val adapter = PersonAdapter(this, profileList)
